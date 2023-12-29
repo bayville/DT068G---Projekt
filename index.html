@@ -5,30 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hem - Färdtjänst Rättviks kommun</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend+Deca:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/d8191f7c02.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-
+    <div class="container--l flex">
+    <a href="" class="header__logo--link"><img class="header--logo" src="./img/logo.svg" alt="Färdtjänst logo"></a>
+   <!-- Menu Button -->
+   <button class="menu__btn open" id="open-menu">
+    <span class="menu__icon--open">
+        <span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span>
+    </span>
+    <!-- <span class="menu__text">Meny</span> -->
+</button>
+<!-- Navigation -->
+<nav class="nav" id="nav">
+     <!-- Close Menu Button -->
+ <button class="menu__btn close" id="close-menu">
+    <span class="menu__icon--close">
+        <span class="bars cross1"></span>
+        <span class="bars cross2"></span>
+    </span>
+</button>
+    <!-- Navigation List -->
+    <ul class="nav__list">
+        <li class="nav__item"><a href="boka.html" class="nav__link--active">Boka resa</a></li>
+        <li class="nav__item"><a href="resor.html" class="nav__link">Mina resor</a></li>        
+        <li class="nav__item"><a href="about.html" class="nav__link">Information</a></li>
+        <li class="nav__item"><a href="bildbehandling.html" class="nav__link"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
+    </ul>
+</nav>
+    </div>
     </header>
     <main class="container--l">
         <div class="container--m">
             <h1>Test rubrik</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet numquam doloremque doloribus architecto pariatur laboriosam fugiat, nisi veritatis ex enim beatae officia soluta ut nemo, similique ad laudantium. Vel recusandae laboriosam sunt maxime ea sequi! Quibusdam voluptas voluptatum nesciunt omnis veritatis deleniti dolorum deserunt doloremque sequi distinctio, odit libero consequatur molestias, dolor eos neque minima numquam modi pariatur repellat ea. A quisquam facilis necessitatibus asperiores distinctio deserunt voluptatibus et ipsum esse autem blanditiis, praesentium libero nesciunt aspernatur natus explicabo maiores. Quo, error quibusdam unde quos voluptatum asperiores. Consequuntur totam sit delectus! Sed earum architecto iste dignissimos numquam quisquam delectus eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet numquam doloremque doloribus architecto pariatur laboriosam fugiat, 
+            nisi veritatis ex enim beatae officia soluta ut nemo, similique ad laudantium. Vel recusandae laboriosam sunt maxime ea sequi! 
+            Quibusdam voluptas voluptatum nesciunt omnis veritatis deleniti dolorum deserunt doloremque sequi distinctio, odit libero consequatur molestias, 
+            dolor eos neque minima numquam modi pariatur repellat ea. A quisquam facilis necessitatibus asperiores distinctio 
+            deserunt voluptatibus et ipsum esse autem blanditiis, praesentium libero nesciunt aspernatur natus explicabo maiores. 
+            <a href="#" class="text__link">Quo, error quibusdam unde</a> quos voluptatum asperiores. Consequuntur totam sit delectus! Sed earum architecto iste dignissimos numquam quisquam delectus eaque.</p>
         </div>
     </main>
     <footer>
-        <div class="container--l">
-            <div class="footer-contact">
+        <div class="container--l grid--two-column">
+            <div class="footer__contact">
                 <h3>Kontakt</h3>
-                    <p>Rättviks kommun</p>
-                    <p>SE-795 80 Rättvik</p>
-                    <p>Telefon: <a href="tel:+46000000000">+46000000000</a></p>
-                    <p>E-post: <a href="mailto:fardtjanst@rattvik.se">fardtjanst@rattvik.se</a></p>
+                <p>Rättviks kommun</p>
+                <p>SE-795 80 Rättvik</p>
+                <p>Telefon: <a href="tel:+46000000000">+46000000000</a></p>
+                <p>E-post: <a href="mailto:fardtjanst@rattvik.se">fardtjanst@rattvik.se</a></p>
             </div>
+            <div class="footer__info">
+                <h3>Information</h3>
+                <ul class="footer__info--list">
+                    <li><a href="#">Tillgänglighetsredogörelese</a></li>
+                    <li><a href="#">Ansök om färdtjänst</a></li>
+                </ul>              
+            </div>
+            <img class="footer__logo" src="./img/logo_white.svg" alt="Färdtjänst logo vit">
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
