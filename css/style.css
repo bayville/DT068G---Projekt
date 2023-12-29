@@ -73,7 +73,7 @@ i{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding:0.5em;
+    /* padding:0.5em; */
 }
 
 .container--m{
@@ -85,12 +85,23 @@ i{
 header{
     margin-top: 1rem;
 }
+
 .header__logo{
     width: 100%;
 }
 .header__logo--link{
     max-width: 200px;
     display: flex;
+}
+
+.header__main{
+    border-bottom:1px solid black ;
+}
+
+.menu__secondary{
+    width: 100%;
+    min-height: 3rem;
+    background-color: var(--accent-color);
 }
 
 /* Navigation */
@@ -185,6 +196,8 @@ header{
 
 
 
+
+
 footer{
     background-color: var(--accent-color);
     padding: 1em;
@@ -232,6 +245,10 @@ footer a{
 
 
 @media screen and (min-width: 900px) {
+
+    i{
+        font-size: 1rem;
+    }
         /* Navigation*/
         .nav {
             display: flex !important;
@@ -245,7 +262,12 @@ footer a{
     
         .nav__list {
             display: flex;
+            margin-top: 1rem;
         }
+        .nav__item {
+            font-size: 1rem;
+        }
+        
     
         .nav__link{
             color: #000;
