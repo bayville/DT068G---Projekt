@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbplats för färdtjänstbokning för Rättviks Kommun">
     <title>Hem - Färdtjänst Rättviks kommun</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
@@ -13,15 +14,14 @@
 <body>
     <header>
     <div class="container--l flex">
-    <a href="" class="header__logo--link"><img class="header--logo" src="./img/logo.svg" alt="Färdtjänst logo"></a>
+    <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/logo.svg" alt="Färdtjänst logo"></a>
    <!-- Menu Button -->
-   <button class="menu__btn open" id="open-menu">
+   <button class="menu__btn open" id="open-menu" aria-label="Öppna meny">
     <span class="menu__icon--open">
         <span class="bars"></span>
         <span class="bars"></span>
         <span class="bars"></span>
     </span>
-    <!-- <span class="menu__text">Meny</span> -->
 </button>
 <!-- Navigation -->
 <nav class="nav" id="nav">
@@ -56,14 +56,14 @@
     <footer>
         <div class="container--l grid--two-column">
             <div class="footer__contact">
-                <h3>Kontakt</h3>
+                <p class="footer__heading">Kontakt</p>
                 <p>Rättviks kommun</p>
                 <p>SE-795 80 Rättvik</p>
                 <p>Telefon: <a href="tel:+46000000000">+46000000000</a></p>
                 <p>E-post: <a href="mailto:fardtjanst@rattvik.se">fardtjanst@rattvik.se</a></p>
             </div>
             <div class="footer__info">
-                <h3>Information</h3>
+                <p class="footer__heading">Information</p>
                 <ul class="footer__info--list">
                     <li><a href="#">Tillgänglighetsredogörelese</a></li>
                     <li><a href="#">Ansök om färdtjänst</a></li>
