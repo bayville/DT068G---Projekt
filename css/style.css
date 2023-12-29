@@ -25,10 +25,6 @@ body {
     line-height: 1.65;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
 
 /* Typography */
 h1, h2, h3 {
@@ -68,22 +64,31 @@ i{
     color: var(--accent-color);
     font-weight: 700;
 }
+
 /* Container */
 .container--l {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    /* padding:0.5em; */
 }
 
 .container--m{
-    max-width: 600px;
+    max-width: 575px;
     margin: 0 auto;
-    padding:0.5em;
 }
 
+
+.info__card{
+    background-color: var(--info-color);
+    padding: 1rem 2rem;
+    max-width: 375px;
+}
+
+
+/* HEADER */
 header{
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .header__logo{
@@ -96,6 +101,11 @@ header{
 
 .header__main{
     border-bottom:1px solid black ;
+}
+
+.header__main--flex{
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu__secondary{
@@ -196,12 +206,47 @@ header{
 
 
 
+/* LOGIN */
+.login{
+    background-color: var(--info-color);
+    padding: 1.25rem;
+    max-width: 375px;
+    margin-bottom: 2em;
+}
 
+.login__title{
+    padding: 0;
+    margin: 0;
+}
+
+.login__form{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+input{
+    width: 100%;
+    padding: 0.5rem;
+    border: transparent;
+}
+
+label{
+    font-weight: 700;
+}
+
+.button--primary{
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-color--accent);
+    margin-top: 1em;
+    cursor: pointer;
+}
 
 footer{
     background-color: var(--accent-color);
-    padding: 1em;
     margin-top: auto;
+    padding-bottom: 1em;
     color: var(--text-color--accent);
     line-height: 1;
 }
@@ -236,7 +281,6 @@ footer a{
 
 
 
-
 /* Media Queries */
 
 @media screen and (min-width: 700px) {
@@ -246,59 +290,76 @@ footer a{
 
 @media screen and (min-width: 900px) {
 
+    .flex--desktop{
+        display: flex;
+        justify-content: space-between;
+    }
     i{
         font-size: 1rem;
     }
-        /* Navigation*/
-        .nav {
-            display: flex !important;
-            position: static;
-            align-items: center;
-            background-color: transparent;
-            width: auto;
-            top: 0;
-            height: auto;
-        }
+    /* Navigation*/
+    .nav {
+        display: flex !important;
+        position: static;
+        align-items: center;
+        background-color: transparent;
+        width: auto;
+        top: 0;
+        height: auto;
+    }
+
+    .nav__list {
+        display: flex;
+        margin-top: 1rem;
+    }
+    .nav__item {
+        font-size: 1.1rem;
+    }
     
-        .nav__list {
-            display: flex;
-            margin-top: 1rem;
-        }
-        .nav__item {
-            font-size: 1rem;
-        }
-        
+
+    .nav__link{
+        color: #000;
+    }
+    .nav__link:hover {
+        color: var(--accent-color);
+        font-weight: 700;
+        width: 100%;
+        display: block;
+        text-decoration: underline;
+        background-color: var(--info-color);
+    }
     
-        .nav__link{
-            color: #000;
-        }
-        .nav__link:hover {
-            color: var(--accent-color);
-            font-weight: 700;
-            width: 100%;
-            display: block;
-            text-decoration: underline;
-            background-color: var(--info-color);
-        }
-        
-        .nav__link--active {
-            display: block;
-            text-decoration: underline;
-            color: var(--accent-color);
-            font-weight: 700;
-            padding: 0.5em 1em;
-            width: 100%;
-            background-color: var(--info-color);
-        }
-    
-        /* Hide menu button */
-        .menu__btn {
-            display: none;
-        }
+    .nav__link--active {
+        display: block;
+        text-decoration: underline;
+        color: var(--accent-color);
+        font-weight: 700;
+        padding: 0.5em 1em;
+        width: 100%;
+        background-color: var(--info-color);
+    }
+
+    /* Hide menu button */
+    .menu__btn {
+        display: none;
+    }
 
     .grid--two-column{
         display: grid;
         grid-template-columns: 1fr 2fr;
+    }
+
+    .info__card{
+        max-width: 500px;
+        margin-right: 0;
+    }
+
+    .login{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    footer{
         background-color: var(--accent-color);
         padding: 1em;
         margin-top: auto;
