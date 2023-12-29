@@ -74,4 +74,9 @@ footer{
     padding: 1em;
     margin-top: auto;
     color: var(--text-color--accent);
+    line-height: 1;
+}
+
+footer a{
+    color: var(--text-color--accent);
 }
