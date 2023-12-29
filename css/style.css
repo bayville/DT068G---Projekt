@@ -73,4 +73,5 @@ footer{
     background-color: var(--accent-color);
     padding: 1em;
     margin-top: auto;
+    color: var(--text-color--accent);
 }
