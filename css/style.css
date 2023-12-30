@@ -30,6 +30,9 @@ body {
     line-height: 1.65;
 }
 
+main{
+    padding-bottom: 1em;
+}
 
 /* Typography */
 h1, h2, h3 {
@@ -65,12 +68,48 @@ i{
     margin-right: 0.2rem;
 }
 
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    width: 100%;
+}
+
+legend{
+    font-weight: 700;
+}
+
+.form--radio{
+    width: fit-content;
+}
+
+
 .center--text{
     text-align: center;
 }
 .text__link{
     color: var(--accent-color);
     font-weight: 700;
+}
+
+.register__form{
+    background-color: var(--info-color);
+    padding:1rem;
+}
+
+.register__form--radio-container{
+    display: flex;
+    align-items: center;
+}
+
+.register__form--radio-container + .register__form--radio-container{
+    margin-top: 0.5rem;
+}
+
+input[type=radio]{
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
 }
 
 /* Container */
@@ -88,7 +127,7 @@ i{
 
 .info__card{
     background-color: var(--info-color);
-    padding: 1rem 2rem;
+    padding: 1rem;
     max-width: 375px;
 }
 
@@ -197,8 +236,6 @@ header{
     width: 100%;
     color:var(--text-color--accent);
 }
-
-
 
 
 /* Menu Button */

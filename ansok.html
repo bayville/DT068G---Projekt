@@ -11,7 +11,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="theme-color" content="#ffffff">
-    <title>Resa 2023-12-31 - Färdtjänst Rättviks kommun</title>
+    <title>Ansökan om färdtjänst - Färdtjänst Rättviks kommun</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
@@ -54,41 +54,63 @@
         </div>
     </header>
     <main class="container--l" id="main">
-        <section class="container--m center--text">
-            <h1>Resa - 2023-12-31</h1>
-        </section>
-        <div class="container--m travel__info">
-            <section class="travel__info--info">
-                <div class="travel__info--date">
-                    <h2>Reseinformation</h2>
-                </div>
-                <article class="travel__info--trip exit">
-                    <h3>Utresa</h3>
-                    <p><strong>2023-12-31 - 13:00</strong></p>
-                    <p><strong>Från:</strong> Rättvik</p>
-                    <p><strong>Till:</strong> Furudal</p>
-                    <p><strong>Medresenärer:</strong> 0</p>
-                </article>
-                <article class="travel__info--trip return">
-                    <h3>Återresa</h3>
-                    <p><strong>2023-01-01 - 13:00</strong></p>
-                    <p><strong>Från:</strong> Furudal</p>
-                    <p><strong>Till:</strong> Rättvik</p>
-                    <p><strong>Medresenärer:</strong> 0</p>
-                </article>
-                <div class="travel__info--extra">
-                <strong>Har du några hjälpmedel?</strong>
-                <p>Rullator</p>
-                <strong>Är du i behov av assitans till och från fordonet?</strong>
-                <p>Resenär är i behov av ledsagare till och från fordonet.</p>
-                </div>
+        <h1 class="center--text">Ansök om färdtjänst</h1>
+        <div class="container--m register__form">
+            <form action="ansok2">
+                <label for="fornamn">Förnamn</label>
+                <input type="text" id="fornamn" placeholder="Fyll i ditt förnamn">
+
+                <label for="efternamn">Efternamn</label>
+                <input type="text" id="efternamn" placeholder="Fyll i ditt efternamn">
+
+                <label for="personnummer">Personnummer</label>
+                <input type="text" id="personnummer" placeholder="ååååmmdd-xxxx">
+
+                <label for="email">E-postadress</label>
+                <input type="email" id="email" placeholder="Fyll i din e-postadress">
+
+                <label for="telefon">Telefonnummer</label>
+                <input type="tel" id="telefon" placeholder="Fyll i ditt telefonnummer">
+
+                <label for="adress">Gatuadress</label>
+                <input type="text" id="adress" placeholder="Fyll i din adress">
+
+                <label for="postnummer">Postnummer</label>
+                <input type="text" id="postnummer" placeholder="Fyll i ditt postnummer">
+
+                <label for="ort">Ort</label>
+                <input type="text" id="ort" placeholder="Fyll i din ort">
+
+                <label for="bostad">Din bostad/hur bor du?</label> <br>
+                <textarea name="bostad" id="bostad" cols="35" rows="5" placeholder="Beskriv ditt boende, t.ex. villa, lägenhet, gruppboende, ålderdomshem."></textarea> <br>
                 
-                <div class="travel__info--buttons">
-                    <a href="#" class="button--primary"><i class="ri-edit-2-fill"></i> Ändra/avboka resa</a>
-                    <a href="javascript:javascript:history.go(-1)" class="text__link">Stäng</a>
-                </div>
-            </section>
+                <label for="hjalpmedel">Har du några hjälpmedel?</label> <br>
+                <textarea name="hjalpmedel" id="hjalpmedel" cols="35" rows="5" placeholder="Beskriv ditt hjälpmedel."></textarea> <br>
                 
+                <label for="assistans">Är du i behov av assitans till och från fordonet?</label> <br>
+                <textarea name="assistans" id="assistans" cols="35" rows="5" placeholder="Beskriv ditt behov av assistans."></textarea> <br>
+                
+                <label for="funktionsbeskrivning">Fuktionsbeskrivning</label> <br>
+                <textarea name="funktionsbeskrivning" id="funktionsbeskrivning" cols="35" rows="5" placeholder="Vilket/vilka funktionshinder har du och när inträffade funktionshindret?"></textarea> <br>
+
+                <label for="fardsatt">Färdsätt</label> <br>
+                <textarea name="fardsatt" id="fardsatt" cols="35" rows="5" placeholder="Beskriv hur du kan resa. T.ex. Jag kan resa i personbil, jag kan inte resa i personbil, jag måste sitta i min rullstol under hela resan."></textarea> <br>
+
+                <fieldset class="register__form--fieldset">
+                <legend >Är du i behov av ledsagare?</legend>
+                    <div class="register__form--radio-container">
+                        <input type="radio" name="ledsagare" class="form--radio" id="ja" value="Ja" checked>
+                        <label for="ja">Ja</label>
+                    </div>
+                    <div class="register__form--radio-container">
+                        <input type="radio" name="ledsagare" class="form--radio" id="nej" value="Nej" checked>
+                        <label for="nej">Nej</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="button--primary">Skicka in ansökan <i class="ri-arrow-right-circle-line"></i></button>
+                <a href="index.html" class="text__link">Avbryt</a>
+            </form>
         </div>
     </main>
     <footer>
