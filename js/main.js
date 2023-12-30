@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 let openBtn = document.getElementById("open-menu");
 let closeBtn = document.getElementById("close-menu");
@@ -7,7 +7,7 @@ let closeBtn = document.getElementById("close-menu");
 let loginContainer = document.getElementById("loginContainer");
 let loginForm = document.getElementById("loginForm")
 let loginMethod = document.getElementById("loginMethod");
-let loginMethodState = false;
+let loginMethodState = false; //Hanterar inloggningsmetod - Bank ID eller Personlig kod
 
 
 openBtn.addEventListener('click', toggleMenu);
@@ -27,7 +27,7 @@ function toggleMenu() {
     }
 }
 
-
+//Funktion för ta bort och skapa formulärfält för bank-id vs personlig kod
 function login() {
     if (loginMethodState === false) {
         loginForm.innerHTML = "";

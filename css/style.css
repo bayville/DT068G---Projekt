@@ -284,6 +284,59 @@ label{
     text-decoration: none;
 }
 
+.travel__info{
+    background-color: var(--info-color);
+    max-width: 575px;
+    padding-bottom: 2rem;
+    margin-bottom: 1em;
+}
+
+.travel__info--info{
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "date"
+        "exit"
+        "return"
+        "extra"
+        "buttons";
+}
+
+.travel__info--trip h3{
+    margin-top: 0;
+}
+
+.travel__info--date{
+    grid-area: date;
+}
+
+.travel__info--tag{
+    background-color: var(--accent-color);
+    color: var(--text-color--accent);
+    padding: 0rem 0.5rem;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.travel__info--tag i{
+    font-size: 1rem;
+}
+
+.travel__info--buttons{
+    grid-area: buttons;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.travel__info--buttons a + a{
+    margin-top: 1rem;
+}
+
 .travel__card{
     background-color: var(--info-color);
     max-width: 575px;
@@ -292,7 +345,7 @@ label{
 }
 
 .travel__card--info{
-    padding: 1rem 2rem;
+    padding: 1rem;
     width: 90%;
     margin: auto;
     display: grid;
@@ -460,6 +513,7 @@ footer a{
     }
     
     .travel__card--info{
+        padding: 1rem 2rem;
         grid-template-areas: 
         "date date"
         "exit return"
@@ -470,6 +524,22 @@ footer a{
         display: block;
     }
     .travel__card--buttons a + a{
+        margin-left: 1.5rem;
+    }
+
+    .travel__info--info{
+        padding: 1rem 2rem;
+        grid-template-areas: 
+        "date date"
+        "exit return"
+        "extra extra"
+        "buttons buttons";
+    }
+
+    .travel__info--buttons{
+        display: block;
+    }
+    .travel__info--buttons a + a{
         margin-left: 1.5rem;
     }
 
