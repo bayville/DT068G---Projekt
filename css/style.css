@@ -12,7 +12,24 @@
     --background-color: #FFFFFF;
     --info-color: #E8EEF1;
     --accent-color: #9E0025;
+    --focus-color: #3498db;
 }
+
+/* Skip to main content */
+.skip-to-main-content-link {
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--accent-color)   ;
+    color: white;
+    opacity: 0;
+  }
+  .skip-to-main-content-link:focus {
+    left: 20%    ;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
 
 /* Body */
 body {
@@ -272,6 +289,10 @@ input{
 
 label{
     font-weight: 700;
+}
+
+a:focus, button:focus, input:focus {
+    outline: 2px solid var(--focus-color); 
 }
 
 .button--primary{
