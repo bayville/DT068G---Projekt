@@ -19,8 +19,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    <a href="#main" class="skip-to-main-content-link">Gå till innehåll  </a>
     <header>
-        <a href="#main" class="skip-to-main-content-link">Gå till innehåll  </a>
         <div class="header__main">
             <div class="header__main--flex container--l">
                 <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/logo.svg" alt="Färdtjänst logo"></a>
@@ -31,17 +31,15 @@
                         <span class="bars"></span>
                         <span class="bars"></span>
                     </span>
-                    Öppna meny
                 </button>
                 <!-- Navigation -->
                 <nav class="nav" id="nav">
                     <!-- Close Menu Button -->
-                    <button class="menu__btn close" id="close-menu">
+                    <button class="menu__btn close" id="close-menu" aria-label="Stäng meny">
                         <span class="menu__icon--close">
                             <span class="bars cross1"></span>
                             <span class="bars cross2"></span>
                         </span>
-                        Stäng meny
                     </button>
                     <!-- Navigation List -->
                     <ul class="nav__list">
@@ -57,8 +55,8 @@
         <div class="menu__secondary">
             <nav class="menu__secondary--nav container--m">
                 <ul class="menu__secondary--list">
-                    <li class="menu__secondary--item"><a href="#" class="menu__secondary--link--active">Aktuella resor</a></li>
-                    <li class="menu__secondary--item"><a href="#" class="menu__secondary--link">Resehistorik</a></li>
+                    <li class="menu__secondary--item"><a href="./resor.html" class="menu__secondary--link--active">Aktuella resor</a></li>
+                    <li class="menu__secondary--item"><a href="./resehistorik.html" class="menu__secondary--link">Resehistorik</a></li>
                 </ul>
             </nav>
         </div>
@@ -86,7 +84,7 @@
                     <p><strong>Till:</strong> Rättvik</p>
                 </article>
                 <div class="travel__card--buttons">
-                    <a href="#" class="button--primary">Ändra/avboka resa</a>
+                    <a href="#" class="button--primary"><i class="ri-edit-2-fill"></i> Ändra/avboka resa</a>
                     <a href="./resa1.html" class="text__link"> Mer information</a>
                 </div>
             </section>
@@ -108,7 +106,7 @@
                     <p><strong>Till:</strong> Rättvik</p>
                 </article>
                 <div class="travel__card--buttons">
-                    <a href="#" class="button--primary">Ändra/avboka resa</a>
+                    <a href="#" class="button--primary"><i class="ri-edit-2-fill"></i> Ändra/avboka resa</a>
                     <a href="#" class="text__link"> Mer information</a>
                 </div>
             </section>
