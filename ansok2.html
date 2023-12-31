@@ -11,7 +11,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="theme-color" content="#ffffff">
-    <title>Hem - Färdtjänst Rättviks kommun</title>
+    <title>Ansökan om färdtjänst - Färdtjänst Rättviks kommun</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
                     </button>
                     <!-- Navigation List -->
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link--active">Hem</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
                         <li class="nav__item"><a href="boka.html" class="nav__link">Boka resa</a></li>
                         <li class="nav__item"><a href="resor.html" class="nav__link">Mina resor</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link">Information</a></li>
@@ -53,30 +53,14 @@
                     </div>
         </div>
     </header>
-    <main class="container--l flex--desktop" id="main">
-        <section class="login container--m" id="loginContainer">
-            <h1 class="login__title">Logga in</h1>
-            <form class="login__form" action="test.html" id="loginForm" aria-live="polite">
-                <label for="personNummer">Personnummer</label>
-                <input type="text" id="personNummer" placeholder="ååååmmdd-xxxx">
-                <button type="submit" class="button--primary">Logga in med Bank-ID <i class="ri-arrow-right-circle-line"></i></button>
-            </form>
-            <a href="#" class="text__link" id="loginMethod">Logga in med personlig kod</a>
-        </section>
-
-
-        <section class="container--m info__card">
-            <article>
-                <h2>Ansök om färdtjänst</h2>
-                <p>Du som folkbokförd i Rättviks kommun kan ansöka om färdtjänst.</p>
-                <a href="./ansok.html" class="text__link">Ansök om färdtjänst</a>
-            </article>
-            <article>
-                <h2>Vem har rätt till färdtjänst?</h2>
-                <p>En funktionsnedsättning som gör att du har stora svårigheter att förflytta dig på egen hand. Det gäller även om du har stora svårigheter att resa med kollektivtrafik. Din funktionsnedsättning ska vara varaktig i mer än tre månader.</p>
-                <a href="#" class="text__link">Information om färdtjänst</a>
-            </article>
-        </section>
+    <main class="container--l" id="main">
+        <h1 class="center--text">Ansökan inskickad</h1>
+        <div class="confirmation__card container--m center--text">
+            <p>
+                Din ansökning är mottagen, du får snart ett sms och mail med bekräftelse på din ansökan. Våra handläggningstider varierar. En ofullständig ansökan kan komma att skickas tillbaka för komplettering av uppgifter.
+            </p>
+            <a href="index.html" class="button--primary">Hem <i class="ri-arrow-right-circle-line"></i></a>
+        </div>
     </main>
     <footer>
         <div class="container--l grid--two-column">
@@ -91,7 +75,7 @@
                 <p class="footer__heading">Information</p>
                 <ul class="footer__info--list">
                     <li><a href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelese</a></li>
-                    <li><a href="./ansok">Ansök om färdtjänst</a></li>
+                    <li><a href="#">Ansök om färdtjänst</a></li>
                 </ul>              
             </div>
             <img class="footer__logo" src="./img/logo_white.svg" alt="Färdtjänst logo vit">

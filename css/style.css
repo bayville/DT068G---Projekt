@@ -64,7 +64,6 @@ img {
 }
 
 i{
-    font-size: 1.5rem;
     margin-right: 0.2rem;
 }
 
@@ -110,6 +109,39 @@ input[type=radio]{
     width: 24px;
     height: 24px;
     margin-right: 0.5em;
+}
+
+input[type=time], input[type=date]{
+    background-color: white;
+}
+
+.booking__form--adress{
+    display: grid;
+    grid-template-areas: 
+    "adress arrow"
+    "adress arrow";
+}
+.booking__form--adress-wrapper{
+    grid-area: adress;
+}
+
+#adressShift{
+    color: var(--accent-color);
+    display: block;
+    grid-area: arrow;
+    margin-top: 1.1rem; /*Taking to account height of text*/
+    margin-left: 1rem;
+    align-self: center;
+    border: none;
+
+}
+.ri-arrow-up-down-fill{
+    
+    text-align: center;
+    border: 1px solid var(--accent-color);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
 }
 
 /* Container */
@@ -315,7 +347,7 @@ label{
     font-weight: 700;
 }
 
-a:focus, button:focus, input:focus {
+a:focus, button:focus, input:focus, textarea:focus {
     outline: 2px solid var(--focus-color); 
 }
 
@@ -441,6 +473,12 @@ a:focus, button:focus, input:focus {
 
 .return{
     grid-area: return;
+}
+
+
+.confirmation__card{
+    padding: 1rem;
+    background-color: var(--info-color);
 }
 
 footer{

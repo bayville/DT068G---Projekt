@@ -7,12 +7,117 @@ let closeBtn = document.getElementById("close-menu");
 let loginContainer = document.getElementById("loginContainer");
 let loginForm = document.getElementById("loginForm")
 let loginMethod = document.getElementById("loginMethod");
+let returnTrip = document.getElementById("returnTrip");
+let returnTripLink = document.getElementById("returnTripLink");
+
+console.dir(returnTrip);
+
 let loginMethodState = false; //Hanterar inloggningsmetod - Bank ID eller Personlig kod
+
 
 
 openBtn.addEventListener('click', toggleMenu);
 closeBtn.addEventListener('click', toggleMenu);
-loginMethod.addEventListener('click', login);
+
+if (loginMethod) {
+    loginMethod.addEventListener('click', login);
+}
+
+if (returnTripLink) {
+    returnTripLink.addEventListener('click', addReturnTrip);
+}
+
+function addReturnTrip() {
+    if (returnTrip.innerHTML === "") {
+        console.log("Börjar skapa html innehåll");
+        // Create the labels and input elements for the form
+        let travelFrom2Label = document.createElement('label');
+        let travelFrom2 = document.createElement('input');
+        let travelTo2Label = document.createElement('label');
+        let travelTo2 = document.createElement('input');
+        let dateReturnLabel = document.createElement('label');
+        let dateReturn = document.createElement('input');  
+        let timeReturnLabel = document.createElement('label');
+        let timeReturn = document.createElement('input');
+        let passengersReturnLabel = document.createElement('label');
+        let passengersReturn = document.createElement('input');
+
+        // Store value for adresses
+        let obj1 = document.getElementById("travelFrom").value;
+        let obj2 = document.getElementById("travelTo").value;
+
+        // Create labels for form-elements
+        travelFrom2Label.setAttribute('for','travelFrom2');
+        travelFrom2Label.innerHTML = "Res från *";
+        travelTo2Label.setAttribute('for', 'travelTo2');
+        travelTo2Label.innerHTML = "Res till *";
+        dateReturnLabel.setAttribute('for', 'dateReturn');
+        dateReturnLabel.innerHTML = "Datum *";
+        timeReturnLabel.setAttribute('for', 'timeReturn');
+        timeReturnLabel.innerHTML = "Tid *";
+        passengersReturnLabel.setAttribute('for', 'passengersReturn');
+        passengersReturnLabel.innerHTML = "Medresenärer";
+
+        // Add attributes to elements
+        travelFrom2.setAttribute('type', 'text');
+        travelFrom2.setAttribute('id', 'travelFrom2');
+        travelFrom2.setAttribute('list', 'adressList');
+        travelFrom2.setAttribute('placeholder', 'Var vill du resa ifrån?');
+        travelFrom2.setAttribute('value', obj2);
+        travelFrom2.setAttribute('required', '');
+        travelTo2.setAttribute('type', 'text');
+        travelTo2.setAttribute('id', 'travelTo2');
+        travelTo2.setAttribute('list', 'adressList');
+        travelTo2.setAttribute('placeholder', 'Vart vill du resa?');
+        travelTo2.setAttribute('value', obj1);
+        travelTo2.setAttribute('required', '');
+        dateReturn.setAttribute('type', 'date');
+        dateReturn.setAttribute('id', 'dateReturn');
+        dateReturn.setAttribute('required', '');
+        timeReturn.setAttribute('type', 'time');
+        timeReturn.setAttribute('id', 'timeReturn');
+        timeReturn.setAttribute('required', '');
+        passengersReturn.setAttribute('type', 'number');
+        passengersReturn.setAttribute('id', 'passengersReturn');
+        passengersReturn.setAttribute('placeholder', 'Antal medresenärer');
+        passengersReturn.setAttribute('required', '');
+
+        // Append to render the elements to the DOM
+        returnTrip.appendChild(travelFrom2Label);
+        returnTrip.appendChild(travelFrom2);
+        returnTrip.appendChild(travelTo2Label);
+        returnTrip.appendChild(travelTo2);
+        returnTrip.appendChild(dateReturnLabel);
+        returnTrip.appendChild(dateReturn);
+        returnTrip.appendChild(timeReturnLabel);
+        returnTrip.appendChild(timeReturn);
+        returnTrip.appendChild(passengersReturnLabel);
+        returnTrip.appendChild(passengersReturn);
+
+        //Change text on link
+        returnTripLink.innerHTML = "Ta bort returresa"
+    }
+   else {
+        console.log("Tömmer innehåll");
+        returnTrip.innerHTML = "";
+        returnTripLink.innerHTML = "Lägg till returresa"
+        console.log("Innehåll tömt");
+   }
+}
+
+function shiftAdress() {
+    let obj1 = document.getElementById("travelFrom").value;
+    let obj2 = document.getElementById("travelTo").value;
+
+    let temp = obj1;
+    obj1 = obj2;
+    obj2 = temp;
+    
+    // Save the swapped values to the input element.
+    document.getElementById('travelFrom').value = obj1;
+    document.getElementById('travelTo').value = obj2;
+  }
+
 
 
 function toggleMenu() {
