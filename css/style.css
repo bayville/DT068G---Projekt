@@ -125,6 +125,36 @@ input[type=time], input[type=date]{
     grid-area: adress;
 }
 
+#weekInput{
+    width: fit-content;
+    text-align: center;
+}
+
+.bookin__form--weekdays{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.bookin__form--weekdays div{
+    display: flex;
+    align-items: center;
+}
+
+.bookin__form--weekdays label{
+    margin-left: 0.2rem;
+    font-weight: 400;
+}
+
+.bookin__form--weekdays input[type=checkbox]{
+    width: auto;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
 #adressShift{
     color: var(--accent-color);
     display: block;
