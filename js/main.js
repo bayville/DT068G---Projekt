@@ -3,17 +3,14 @@
 let openBtn = document.getElementById("open-menu");
 let closeBtn = document.getElementById("close-menu");
 
-
+//Get HTML elements
 let loginContainer = document.getElementById("loginContainer");
 let loginForm = document.getElementById("loginForm")
 let loginMethod = document.getElementById("loginMethod");
 let returnTrip = document.getElementById("returnTrip");
 let returnTripLink = document.getElementById("returnTripLink");
 
-console.dir(returnTrip);
-
-let loginMethodState = false; //Hanterar inloggningsmetod - Bank ID eller Personlig kod
-
+let loginMethodState = false; //Handling login method - Bank ID or Personal code
 
 
 openBtn.addEventListener('click', toggleMenu);
@@ -132,7 +129,7 @@ function toggleMenu() {
     }
 }
 
-//Funktion för ta bort och skapa formulärfält för bank-id vs personlig kod
+//Function to delete and create form fields for Bank ID vs Personal code
 function login() {
     if (loginMethodState === false) {
         loginForm.innerHTML = "";

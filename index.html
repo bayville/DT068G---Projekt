@@ -58,15 +58,15 @@
             <h1 class="login__title">Logga in</h1>
             <form class="login__form" action="test.html" id="loginForm" aria-live="polite">
                 <label for="personNummer">Personnummer</label>
-                <input type="text" id="personNummer" placeholder="ååååmmdd-xxxx">
-                <button type="submit" class="button--primary">Logga in med Bank-ID <i class="ri-arrow-right-circle-line"></i></button>
+                <input type="text" id="personNummer" name="personNummer" placeholder="ååååmmdd-xxxx">
+                <button type="submit" class="button--primary">Logga in med Bank-ID <i class="ri-arrow-right-circle-line" aria-hidden="true"></i></button>
             </form>
-            <a href="#" class="text__link" id="loginMethod">Logga in med personlig kod</a>
+            <a href="#" class="text__link" id="loginMethod" role="button">Logga in med personlig kod</a>
         </section>
 
 
-        <section class="container--m info__card">
-            <article>
+        <section class="container--m info__card" aria-label="Information och ansökan om färdtjänst">
+            <article aria-label="Ansök om färdtjänst">
                 <h2>Ansök om färdtjänst</h2>
                 <p>Du som folkbokförd i Rättviks kommun kan ansöka om färdtjänst.</p>
                 <a href="./ansok.html" class="text__link">Ansök om färdtjänst</a>
