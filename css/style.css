@@ -511,6 +511,14 @@ a:focus, button:focus, input:focus, textarea:focus {
     background-color: var(--info-color);
 }
 
+
+.user__info--card{
+    background-color: var(--info-color);
+    max-width: 575px;
+    padding: 1rem;
+    margin-bottom: 1em;
+}
+
 footer{
     background-color: var(--accent-color);
     margin-top: auto;
@@ -669,6 +677,10 @@ footer a{
     }
     .travel__info--buttons a + a{
         margin-left: 1.5rem;
+    }
+
+    .user__info--card{
+    padding: 1rem 2rem;
     }
 
     footer{

@@ -11,7 +11,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="theme-color" content="#ffffff">
-    <title>Boka resa- Färdtjänst Rättviks kommun</title>
+    <title>Resa bokad - Färdtjänst Rättviks kommun</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
                     <!-- Navigation List -->
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
-                        <li class="nav__item"><a href="boka.html" class="nav__link--active">Boka resa</a></li>
+                        <li class="nav__item"><a href="boka.html" class="nav__link">Boka resa</a></li>
                         <li class="nav__item"><a href="resor.html" class="nav__link">Mina resor</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link">Information</a></li>
                         <li class="nav__item"><a href="minasidor.html" class="nav__link"><i class="ri-user-fill"></i> Mina sidor</a></li>
@@ -52,50 +52,14 @@
                 </nav>
                     </div>
         </div>
-        <div class="menu__secondary">
-            <nav class="menu__secondary--nav container--m">
-                <ul class="menu__secondary--list">
-                    <li class="menu__secondary--item"><a href="./boka.html" class="menu__secondary--link--active">Boka resa</a></li>
-                    <li class="menu__secondary--item"><a href="./bokaaterkommande.html" class="menu__secondary--link">Boka återkommande resa</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
     <main class="container--l" id="main">
-        <h1 class="center--text">Boka resa</h1>
-        <div class="container--m register__form">
-            <form action="./bokningsbekraftelse.html" aria-live="polite">    
-                <div class="booking__form--adress">
-                    <div class="booking__form--adress-wrapper">
-                        <label for="travelFrom">Res från *</label>
-                        <input type="text" id="travelFrom" list="adressList"  placeholder="Var vill du resa ifrån?" required>
-                        <datalist id="adressList">
-                            <option value="Soldvägen 13, 79570">Hem</option>
-                            <option value="Gatan 7, 54321">Min son Kalle</option>
-                            <option value="Skogsvägen 10, 23456">Min dotter Anna</option>
-                            <option value="Centrumvägen 22, 98765">Affären - ICA</option>
-                            <option value="Centrumvägen 1, 98765">Centrumtorget</option>
-                            <option value="Parkgatan 5, 45678">Bouleklubben</option>
-                        </datalist>
-                        <label for="travelTo">Res till *</label>
-                        <input type="text" id="travelTo" list="adressList" placeholder="Vart vill du resa?" required>
-                    </div>
-                    <button id="adressShift" onclick="shiftAdress()" type="button" aria-label="Ändra reseriktning"> <i class="ri-arrow-up-down-fill"></i></button>
-                </div>
-                
-                <label for="dateExit">Datum *</label>
-                <input type="date" id="dateExit" required>
-                <label for="timeExit">Tid *</label>
-                <input type="time" id="timeExit" required>
-                <label for="passengers">Medresenärer</label>
-                <input type="number" id="passengers" placeholder="Antal medresenärer">
-                <label for="hjalpmedel">Övriga upplysningar/Särskilda behov</label> <br>
-                <textarea name="hjalpmedel" id="hjalpmedel" cols="35" rows="5" placeholder="Särskilda behov som att resa med rullstol istället för rullator, eller andra viktiga detaljer som påverkar din resa. Ange även om du behöver extra assistans eller har speciella önskemål."></textarea>
-                <div id="returnTrip" ></div>
-                <a href="#" id="returnTripLink" class="text__link">Lägg till returresa</a> <br>
-                <button type="submit" class="button--primary">Boka resa <i class="ri-arrow-right-circle-line"></i></button>
-                
-            </form>
+        <h1 class="center--text">Din resa är bokad</h1>
+        <div class="confirmation__card container--m center--text">
+            <p>
+                Din resa är nu bokad, du får snart ett sms och mail med bekräftelse på din bokning.
+            </p>
+            <a href="resor.html" class="button--primary">Stäng <i class="ri-close-circle-line"></i></a>
         </div>
     </main>
     <footer>
