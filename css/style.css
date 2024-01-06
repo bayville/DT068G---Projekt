@@ -1,4 +1,4 @@
-@import url(normalize.css);
+@import url(normalize.css);  /*Reset CSS*/
 
 /* Global */
 *, *::before, *::after {
@@ -269,7 +269,6 @@ header{
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--accent-color);
-
 }
 
 .nav__list {

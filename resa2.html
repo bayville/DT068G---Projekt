@@ -11,7 +11,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="theme-color" content="#ffffff">
-    <title>Hem - Färdtjänst Rättviks kommun</title>
+    <title>Återkommande resa 1 - Färdtjänst Rättviks kommun</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
                     </button>
                     <!-- Navigation List -->
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link--active">Hem</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
                         <li class="nav__item"><a href="boka.html" class="nav__link">Boka resa</a></li>
                         <li class="nav__item"><a href="resor.html" class="nav__link">Mina resor</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link">Information</a></li>
@@ -53,30 +53,45 @@
                     </div>
         </div>
     </header>
-    <main class="container--l flex--desktop" id="main">
-        <section class="login container--m" id="loginContainer">
-            <h1 class="login__title">Logga in</h1>
-            <form class="login__form" action="boka.html" id="loginForm" aria-live="polite">
-                <label for="personNummer">Personnummer</label>
-                <input type="text" id="personNummer" name="personNummer" placeholder="ååååmmdd-xxxx">
-                <button type="submit" class="button--primary">Logga in med Bank-ID <i class="ri-arrow-right-circle-line" aria-hidden="true"></i></button>
-            </form>
-            <a href="#" class="text__link" id="loginMethod" role="button">Logga in med personlig kod</a>
+    <main class="container--l" id="main">
+        <section class="container--m center--text">
+            <h1>Återkommande resa 1</h1>
         </section>
+        <div class="container--m travel__info">
+            <section class="travel__info--info">
+                <div class="travel__info--date">
+                    <h2>Reseinformation</h2>
+                </div>
+                <article class="travel__info--trip exit">
+                    <h3>Nästa utresa</h3>
+                    <p><strong><i class="ri-calendar-line"></i>2024-12-31 - <i class="ri-time-line"></i>13:00</strong></p>
+                    <p><strong>Från:</strong> Rättvik</p>
+                    <p><strong>Till:</strong> Furudal</p>
+                    <p><strong>Medresenärer:</strong> 0</p>
+                    <p><strong>Upprepa t.o.m:</strong> 2024-03-20</p>
 
-
-        <section class="container--m info__card" aria-label="Information och ansökan om färdtjänst">
-            <article aria-label="Ansök om färdtjänst">
-                <h2>Ansök om färdtjänst</h2>
-                <p>Du som folkbokförd i Rättviks kommun kan ansöka om färdtjänst.</p>
-                <a href="./ansok.html" class="text__link">Ansök om färdtjänst</a>
-            </article>
-            <article>
-                <h2>Vem har rätt till färdtjänst?</h2>
-                <p>En funktionsnedsättning som gör att du har stora svårigheter att förflytta dig på egen hand. Det gäller även om du har stora svårigheter att resa med kollektivtrafik. Din funktionsnedsättning ska vara varaktig i mer än tre månader.</p>
-                <a href="#" class="text__link">Information om färdtjänst</a>
-            </article>
-        </section>
+                </article>
+                <article class="travel__info--trip return">
+                    <h3>Nästa återresa</h3>
+                    <p><strong><i class="ri-calendar-line"></i>2023-01-01 - <i class="ri-time-line"></i>13:00</strong></p>
+                    <p><strong>Från:</strong> Furudal</p>
+                    <p><strong>Till:</strong> Rättvik</p>
+                    <p><strong>Medresenärer:</strong> 0</p>
+                </article>
+                <div class="travel__info--extra">
+                <strong>Har du några hjälpmedel?</strong>
+                <p>Rullator</p>
+                <strong>Är du i behov av assitans till och från fordonet?</strong>
+                <p>Resenär är i behov av ledsagare till och från fordonet.</p>
+                </div>
+                
+                <div class="travel__info--buttons">
+                    <a href="avboka.html" class="button--primary"><i class="ri-edit-2-fill"></i> Ändra/avboka resa</a>
+                    <a href="resor.html" class="text__link">Stäng</a>
+                </div>
+            </section>
+                
+        </div>
     </main>
     <footer>
         <div class="container--l grid--two-column">
@@ -91,7 +106,7 @@
                 <p class="footer__heading">Information</p>
                 <ul class="footer__info--list">
                     <li><a href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelese</a></li>
-                    <li><a href="./ansok">Ansök om färdtjänst</a></li>
+                    <li><a href="#">Ansök om färdtjänst</a></li>
                 </ul>              
             </div>
             <img class="footer__logo" src="./img/logo_white.svg" alt="Färdtjänst logo vit">
