@@ -35,7 +35,7 @@
                 <!-- Navigation -->
                 <nav class="nav" id="nav">
                     <!-- Close Menu Button -->
-                    <button class="menu__btn close" id="close-menu">
+                    <button class="menu__btn close" id="close-menu" aria-label="Stäng meny">
                         <span class="menu__icon--close">
                             <span class="bars cross1"></span>
                             <span class="bars cross2"></span>
@@ -56,10 +56,45 @@
     </header>
     <main class="container--l" id="main">
         <section class="container--m">
-            <h1>Tillgänglighets&shy;redogörelese</h1>
+            <h1>Tillgänglighets&shy;redogörelse</h1>
             <strong>Rättviks kommun står bakom tjänsten Färdtjänst Rättvik.</strong>
+            <p>Det här dokumentet beskriver:</p>
+            <ul>
+                <li>Hur Färdtjänst Rättvik uppfyller DOS-lagen.</li>
+                <li>Eventuella brister i tillgängligheten.</li>
+                <li>Hur du kan rapportera brister till oss.</li>
+                <li>Vem du vänder dig till om dina synpunkter inte hanteras på önskvärt sätt.</li>
+                <li>Hur sidan är testad.</li>
+            </ul>
             <h2>Brister i tillgängliheten</h2>
-            <p>Vi är medvetna om att det kan förekomma brister i tillgängligheten, vi arbetar aktivt för att åtgärda bristerna.</p>
+            <p>Vi är medvetna om att det kan förekomma brister i tillgängligheten, vi arbetar för att uppfylla alla kriterier i WCAG.</p>
+            <h3>Allmänna brister</h3>
+            <ul>
+                <li>Flera formulärfält saknar felkontroller.</li>
+                <li>En del länkar kan ha förvirrande namn vilket kan göra att det är oklart vilken sidan man navigerar till.</li>
+            </ul>
+            <h2>Vad kan du göra om du inte kan använda delar av webbplatsen?</h2>
+            <p>Kontakta <a href="mailto:fardtjanst@rattvik.se">fardtjanst@rattvik.se</a> eller ring <a href="tel:+460000000">+460000000</a> om du inte kan ta del av innehållet på grund av brister på webbplatsen.</p>
+            <p>Normal får du svar inom två arbetsdagar.</p>
+            <h3>Om du har synpunkter på tillgängligheten</h3>
+            <p>Vi vill att webbplatsen ska vara så tillgänglighetsanpassad som möjligt och strävar hela tiden att webbplatsen ska bli mer tillgänglig. Om du upptäcker problem, eller om du anser att vi inte uppfyller lagens krav, kan du kontakta oss på <a href="mailto:fardtjanst@rattvik.se">fardtjanst@rattvik.se</a>.</p>
+            <h2>Tillsyn</h2>
+            <p>Mydingheten för digital förvaltning har ansvaret för tillsyn för DOS-lagen. Om du inte är nöjd med hur vi hanterar dina synpunkter kan du <a href="https://www.digg.se/tdosanmalan" target="_blank">kontakta Myndigheten för digital förvaltning</a> och påtala det.</p>
+            <h2>Teknisk information om webbplatsens tillgänglighet</h2>
+            <p>Den här webbplatsen är mestadels förenlig med lagen DOS-lagen.</p>
+            <h2>Hur vi har testat webbplatesen</h2>
+            <p>Det har gjorts en intern självskattning av webbplatsen. Webbplatsen har testats med skärmläsare, verktyget Wave från Web Aim,  samt verktyget Stark. 
+                Samtliga sidor är tillgänglighetstestade och de har även genomgått en kontroll så att koden validerar korrekt enligt W3C.</p>
+            <p>Senaste bedömningen gjordes 2024-01-07.</p>
+            <p>Redogörelsen uppdaterades 2024-01-07.</p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+            </p>
+                   
         </section>
 
     </main>
@@ -75,8 +110,8 @@
             <div class="footer__info">
                 <p class="footer__heading">Information</p>
                 <ul class="footer__info--list">
-                    <li><a href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelese</a></li>
-                    <li><a href="#">Ansök om färdtjänst</a></li>
+                    <li><a href="./tillganglighetsredogorelse.html">Tillgänglighetsredogörelse</a></li>
+                    <li><a href="./ansok.html">Ansök om färdtjänst</a></li>
                 </ul>              
             </div>
             <img class="footer__logo" src="./img/logo_white.svg" alt="Färdtjänst logo vit">

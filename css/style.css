@@ -44,6 +44,7 @@ h1, h2, h3 {
 
 h1{
     font-size: 2.5rem;
+    
 }
 
 h2{
@@ -77,6 +78,7 @@ textarea{
 legend{
     font-weight: 700;
 }
+
 
 .form--radio{
     width: fit-content;
@@ -275,7 +277,6 @@ header{
     margin-top: 10vh;
     padding: 0;
     list-style-type: none;
-
 }
 
 .nav__item {
@@ -288,7 +289,6 @@ header{
     padding: 0.5em 1em;
     width: 100%;
     color:var(--text-color--accent);
-
 }
 
 .nav__link--active {
@@ -383,8 +383,26 @@ a:focus, button:focus, input:focus, textarea:focus {
 .button--primary{
     padding: 0.5rem 1rem;
     background-color: var(--accent-color);
-    border: none;
+    border: 2px solid var(--accent-color);
     color: var(--text-color--accent);
+    margin-top: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button--secondary{
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    margin-top: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button--secondary--black{
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    color:black;
     margin-top: 1em;
     cursor: pointer;
     text-decoration: none;
@@ -518,6 +536,19 @@ a:focus, button:focus, input:focus, textarea:focus {
     margin-bottom: 1em;
 }
 
+.user__info--card h2{
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+#pauseForm{
+    margin-bottom: 1em;
+}
+
+#pauseForm input{
+    text-align: center;
+}
+
 footer{
     background-color: var(--accent-color);
     margin-top: auto;
@@ -583,9 +614,7 @@ footer a{
         display: flex;
         justify-content: space-between;
     }
-    i{
-        font-size: 1rem;
-    }
+
     /* Navigation*/
     .nav {
         display: flex !important;
@@ -656,10 +685,16 @@ footer a{
     }
 
     .travel__card--buttons{
-        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
     }
     .travel__card--buttons a + a{
         margin-left: 1.5rem;
+    }
+
+    .travel__card--buttons a:nth-child(3){
+        margin-left: 0;
     }
 
     .travel__info--info{
@@ -678,6 +713,9 @@ footer a{
         margin-left: 1.5rem;
     }
 
+    #travel__card--close{
+        margin-left: 1.5rem;
+    }
     .user__info--card{
     padding: 1rem 2rem;
     }

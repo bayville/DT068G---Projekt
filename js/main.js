@@ -1,5 +1,6 @@
 "use strict";
 
+
 let openBtn = document.getElementById("open-menu");
 let closeBtn = document.getElementById("close-menu");
 
@@ -9,12 +10,14 @@ let loginForm = document.getElementById("loginForm")
 let loginMethod = document.getElementById("loginMethod");
 let returnTrip = document.getElementById("returnTrip");
 let returnTripLink = document.getElementById("returnTripLink");
+let pauseDate = document.getElementById("pauseDate");
 
 let loginMethodState = false; //Handling login method - Bank ID or Personal code
 
 
 openBtn.addEventListener('click', toggleMenu);
 closeBtn.addEventListener('click', toggleMenu);
+// pauseFormEl.addEventListener('submit', console.log(pauseFormEl.value));
 
 if (loginMethod) {
     loginMethod.addEventListener('click', login);
@@ -23,6 +26,15 @@ if (loginMethod) {
 if (returnTripLink) {
     returnTripLink.addEventListener('click', addReturnTrip);
 }
+
+if (pauseDate){
+    const urlParams = new URLSearchParams(window.location.search);
+    const formDate = urlParams.get('date');
+    pauseDate.innerHTML = formDate;
+}
+
+
+
 
 function addReturnTrip() {
     if (returnTrip.innerHTML === "") {
