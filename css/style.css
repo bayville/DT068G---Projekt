@@ -91,10 +91,11 @@ legend{
 .text__link{
     color: var(--accent-color);
     font-weight: 700;
+    border: 1px solid    transparent;
 }
 
 .text__link:hover{
-    color: black;
+    border: 1px solid var(--accent-color);
 }
 
 .register__form{
