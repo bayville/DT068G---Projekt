@@ -93,6 +93,10 @@ legend{
     font-weight: 700;
 }
 
+.text__link:hover{
+    color: black;
+}
+
 .register__form{
     background-color: var(--info-color);
     padding:1rem;
@@ -390,6 +394,10 @@ a:focus, button:focus, input:focus, textarea:focus {
     text-decoration: none;
 }
 
+.button--primary:hover{
+    border:2px solid black;
+}
+
 .button--secondary{
     padding: 0.5rem 1rem;
     border: 2px solid var(--accent-color);
@@ -399,6 +407,12 @@ a:focus, button:focus, input:focus, textarea:focus {
     text-decoration: none;
 }
 
+.button--secondary:hover{
+    background-color: var(--accent-color);
+    color: var(--text-color--accent);
+}
+
+
 .button--secondary--black{
     padding: 0.5rem 1rem;
     border: 2px solid black;
@@ -406,6 +420,11 @@ a:focus, button:focus, input:focus, textarea:focus {
     margin-top: 1em;
     cursor: pointer;
     text-decoration: none;
+}
+
+.button--secondary--black:hover{
+    background-color: var(--text-color);
+    color: white;
 }
 
 .travel__info{
