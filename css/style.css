@@ -94,9 +94,6 @@ legend{
     border: 1px solid    transparent;
 }
 
-.text__link:hover{
-    border: 1px solid var(--accent-color);
-}
 
 .register__form{
     background-color: var(--info-color);
@@ -381,7 +378,7 @@ label{
     font-weight: 700;
 }
 
-a:focus, button:focus, input:focus, textarea:focus {
+a:focus, a:hover, button:focus, button:hover, input:focus, input:hover, textarea:focus, textarea:hover {
     outline: 2px solid var(--focus-color); 
 }
 
@@ -393,10 +390,6 @@ a:focus, button:focus, input:focus, textarea:focus {
     margin-top: 1em;
     cursor: pointer;
     text-decoration: none;
-}
-
-.button--primary:hover{
-    border:2px solid black;
 }
 
 .button--secondary{
