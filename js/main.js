@@ -88,6 +88,7 @@ function addReturnTrip() {
         timeReturn.setAttribute('required', '');
         passengersReturn.setAttribute('type', 'number');
         passengersReturn.setAttribute('id', 'passengersReturn');
+        passengersReturn.setAttribute('value', 0);
         passengersReturn.setAttribute('placeholder', 'Antal medresenärer');
         passengersReturn.setAttribute('required', '');
 

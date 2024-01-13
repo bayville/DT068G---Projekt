@@ -212,6 +212,7 @@ header{
     display: flex;
 }
 
+
 .header__main{
     border-bottom:1px solid black ;
 }
@@ -256,6 +257,8 @@ header{
     text-decoration: underline;
 }
 
+
+
 .menu__secondary--link:hover{
     color: var(--text-color--accent);
     text-decoration: underline;
@@ -294,6 +297,13 @@ header{
 }
 
 .nav__link--active {
+    display: block;
+    padding: 0.5em 1em;
+    width: 100%;
+    color:var(--text-color--accent);
+}
+
+.nav__link--active--red{
     display: block;
     padding: 0.5em 1em;
     width: 100%;
@@ -372,13 +382,31 @@ input{
     width: 100%;
     padding: 0.5rem;
     border: transparent;
+    margin-bottom: 1rem;
+
+}
+
+select{
+    width: 100%;
+    padding: 0.5rem;
+    border: transparent;
+    margin-bottom: 1.2rem;
+}
+
+input[type=checkbox]{
+    margin-bottom: 0;
 }
 
 label{
     font-weight: 700;
 }
 
-a:focus, a:hover, button:focus, button:hover, input:focus, input:hover, textarea:focus, textarea:hover {
+#dateUntilLabel{
+    display: block;
+    margin-top: 1rem;
+}
+
+a:focus, a:hover, button:focus, button:hover, input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:hover {
     outline: 2px solid var(--focus-color); 
 }
 
@@ -419,6 +447,26 @@ a:focus, a:hover, button:focus, button:hover, input:focus, input:hover, textarea
 .button--secondary--black:hover{
     background-color: var(--text-color);
     color: white;
+}
+
+.quick--links--wrapper{
+    padding: 1rem;
+    border: 1px solid black;
+}
+.quick--links--wrapper h2{
+    margin: 0;
+}
+
+.quick--links{
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.quick--links--grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
 }
 
 .travel__info{
@@ -597,16 +645,14 @@ footer a{
 .footer__info--list li + li{
     margin-top:1rem;
 }
-
+.header__logo--link:hover{
+    outline: none;
+}
 
 /* Media Queries */
 
-@media screen and (min-width: 700px) {
 
-}
-
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 980px) {
     /* Skip to main content */
     .skip-to-main-content-link {
         display: inline;    
@@ -669,6 +715,36 @@ footer a{
         width: 100%;
         background-color: var(--info-color);
     }
+
+    .nav__link--active--red {
+        display: block;
+        text-decoration: underline;
+        color: var(--text-color--accent);
+        font-weight: 700;
+        padding: 0.5em 1em;
+        width: 100%;
+        background-color: var(--accent-color);
+    }
+
+    .menu__tab {
+        display: inline-block;
+        position: relative;
+        /* padding-bottom: 0.25rem; */
+        margin: 0;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            right: 0%;
+            height: 1.5rem;
+            background-color: var(--accent-color);
+            clip-path: polygon(100% 0px, 100% 100%, calc( 100% - 500px) 100%, 0px 0px);
+            z-index: 10;
+
+        }
+    }
+
 
     /* Hide menu button */
     .menu__btn {
